@@ -1,0 +1,52 @@
+#root {
+  margin: 2%;
+}
+
+.background-clock {
+  width: 100vh;
+  height: 100vh;
+  top: 0;
+  left: calc(50% - 30vh);
+  position: fixed;
+  z-index: -9999;
+}
+
+.background-clock .center, .background-clock .hours, .background-clock .minutes, .background-clock .seconds {
+  position: absolute;
+  transform-origin: bottom;
+  background-color: #e7eaed;
+}
+
+.background-clock .center {
+  left: calc(50% - 30px);
+  top: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.background-clock .hours {
+  top: 20%;
+  left: calc(50% - 20px);
+
+  width: 40px;
+  height: 30%;
+  border-radius: 20px;
+}
+
+.background-clock .minutes {
+  top: 2.5%;
+  left: calc(50% - 10px);
+
+  width: 20px;
+  height: 47.5%;
+  border-radius: 10px;
+}
+
+.background-clock .seconds {
+  left: calc(50% - 4px);
+
+  width: 8px;
+  height: 50%;
+  border-radius: 4px;
+}
